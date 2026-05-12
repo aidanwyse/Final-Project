@@ -1,0 +1,384 @@
+
+    :root {
+      --primary: #f0371a;
+      --secondary: #1c1c1c;
+      --accent: #f5a623;
+      --text: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #111;
+      color: var(--text);
+    }
+
+    
+    header {
+      background: linear-gradient(135deg, #d90808, #8b0000);
+      padding: 25px;
+      text-align: center;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    header h1 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 3em;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    header p { margin: 5px 0 0; opacity: 0.8; }
+
+   
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #000;
+      border-bottom: 2px solid #333;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--primary);
+      color: var(--accent);
+    }
+
+    
+    .hero {
+      background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/11/53/26/a-view-of-sammy-s.jpg?w=900&h=500&s=1') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      position: relative;
+      font-family: 'Bebas Neue';
+      font-size: 2.5em;
+      background: rgba(0,0,0,0.7);
+      padding: 15px 30px;
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+    }
+
+   
+    .section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-family: 'Bebas Neue';
+      font-size: 2.2em;
+      border-left: 5px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      border-color: var(--accent);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+      font-family: 'Bebas Neue';
+      letter-spacing: 1px;
+    }
+
+    
+    #contact p { margin: 8px 0; }
+
+    button {
+      margin-top: 15px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: var(--accent);
+      color: black;
+    }
+
+    
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      border-top: 2px solid #333;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+    
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2em; }
+      .hero h2 { font-size: 1.8em; }
+    }
+
+.img {
+max-width: 50%;
+height: auto;
+}
+
+#reviews h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2em;
+  border-left: 5px solid #f5a623;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  border-color: #f5a623;
+}
+
+.stars {
+  color: #f5a623;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.reviewer {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+    
+    href{
+        color: #ffffff;
+    }
+contact {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#contact h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2em;
+  border-left: 5px solid #f5a623;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+
+.contact-info {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.contact-info h3 {
+  color: #f5a623;
+}
+
+
+.contact-form {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.contact-form h3 {
+  color: #f5a623;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background: #111;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #8b0000;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #f5a623;
+  color: black;
+}
+
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+
+.about-text h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.4em;
+  border-left: 5px solid #f5a623;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #333;
+  transition: 0.3s;
+}
+rating-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  font-size: 2em;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  color: #444;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+  color: #f5a623;
+}
+
+
+.stars input:checked ~ label {
+  color: #f5a623;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #8b0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f5a623;
+  color: black;
+}
+header h1 {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2em;
+  text-decoration: underline;
+  text-decoration-color: #f5a623; 
+  text-underline-offset: 6px; 
+}
